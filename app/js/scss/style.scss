@@ -1,0 +1,30 @@
+
+
+$accent: rgba(242, 0, 255, 0.878) ;
+
+.header{
+    padding: 40px 0;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.menu{
+    menu__list{
+        display: flex;
+    
+    }
+    &__list-item + .menu__list-item{
+        padding-left: 35px;
+    }
+    &__list-link{
+        transition: all .3s;
+        padding-bottom: 0 2px 2px ;
+
+        &:hover{
+            color: $accent;
+        }
+    }
+}
